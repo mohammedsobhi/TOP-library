@@ -8,7 +8,156 @@
   <title>Library</title>
 </head>
 <body>
-  
+  <header class="container">
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+      <div class="navbar-brand">
+        <figure class="image is-32x32 mt-4 ml-2">
+          <img src="assets/library-outline.svg">
+        </figure>
+        <h1 class="navbar-item title mb-0">
+          Library
+        </h1>
+    
+        <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+      </div>
+    
+      <div id="navbarBasicExample" class="navbar-menu">
+        <div class="navbar-start">
+          <p class="navbar-item">
+            A vanilla JS project from <strong>&nbsp; The Odin Project &nbsp;</strong> curriculum.
+          </p>
+        </div>
+    
+        <div class="navbar-end">
+          <div class="navbar-item">
+            <div class="buttons">
+              <a class="button is-light">
+                <span class="icon">
+                  <figure class="image is-16x16">
+                    <img src="assets/logo-github.svg">
+                  </figure>
+                </span>
+                <span>my GitHub</span>
+              </a>
+              <a class="button">
+                <span class="icon">
+                  <figure class="image is-16x16">
+                    <img src="assets/logo-github.svg">
+                  </figure>
+                </span>
+                <span>Source code</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+
+  <main class="container is-max-desktop mt-4">
+    <div class="card mb-5">
+      <div class="card-content">
+        <p class="title is-4">
+          Add new book
+        </p>
+        <form>
+          <div class="columns">
+            <div class="column field mb-0">
+              <label class="label">Book</label>
+              <div class="control">
+                <input class="input" type="text" placeholder="Text input">
+              </div>
+            </div>
+            <div class="column field mb-0">
+              <label class="label">Author</label>
+              <div class="control">
+                <input class="input" type="text" placeholder="Text input">
+              </div>
+            </div>
+            <div class="column is-2 field mb-0">
+              <label class="label">Pages</label>
+              <div class="control">
+                <input class="input" type="number" placeholder="Text input" step="1">
+              </div>
+            </div>
+            <div class="column is-2 field mb-0">
+              <label class="label">Statue</label>
+              <div class="control">
+                <div class="select">
+                  <select>
+                    <option>read</option>
+                    <option>not read</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="field">
+            <div class="control">
+              <button class="button is-dark" >
+                Submit
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <div class="container">
+      <h2 class="title">
+        my Books
+      </h2>
+      <div class="table-container">
+        <table class="table is-fullwidth is-striped books">
+          <thead>
+            <tr>
+              <th>Book</th>
+              <th>Author</th>
+              <th>Pages</th>
+              <th>Statue</th>
+              <th>Delete</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>new dsasd dsa</td>
+              <td>newd ssdsdd</td>
+              <td>212</td>
+              <td><button class="button is-small is-dark">read</button></td>
+              <td><button class="delete"></button></td>
+            </tr>
+            <tr>
+              <td>new dsasd dsa</td>
+              <td>newd ssdsdd</td>
+              <td>212</td>
+              <td><button class="button is-small">not read</button></td>
+              <td><button class="delete"></button></td>
+            </tr>
+            <tr>
+              <td>new dsasd dsa</td>
+              <td>newd ssdsdd</td>
+              <td>212</td>
+              <td><button class="button is-small is-dark">read</button></td>
+              <td><button class="delete"></button></td>
+            </tr>
+            <tr>
+              <td>new dsasd dsa</td>
+              <td>newd ssdsdd</td>
+              <td>212</td>
+              <td><button class="button is-small is-dark">read</button></td>
+              <td><button class="delete"></button></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+  </main>
 
   <script src="app.js"></script>
 </body>

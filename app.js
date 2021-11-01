@@ -1,23 +1,31 @@
-document.addEventListener("DOMContentLoaded", () => {
-  // Get all "navbar-burger" elements
-  const $navbarBurgers = Array.prototype.slice.call(
-    document.querySelectorAll(".navbar-burger"),
-    0
-  );
+let myBooks = [
+  { book: "Dune part 1", author: "Frank Herbert", pages: 532, read: true },
+  { book: "Dune part 2", author: "Frank Herbert", pages: 533, read: false },
+  { book: "Dune part 3", author: "Frank Herbert", pages: 532, read: true },
+];
 
-  // Check if there are any navbar burgers
-  if ($navbarBurgers.length > 0) {
-    // Add a click event on each of them
-    $navbarBurgers.forEach((el) => {
-      el.addEventListener("click", () => {
-        // Get the target from the "data-target" attribute
-        const target = el.dataset.target;
-        const $target = document.getElementById(target);
+displayBooks();
+function displayBooks() {
+  const booksContainer = document.querySelector("#books_container");
 
-        // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
-        el.classList.toggle("is-active");
-        $target.classList.toggle("is-active");
-      });
-    });
-  }
-});
+  myBooks.forEach((book) => {
+    const bookRow = document.createElement("tr");
+
+    // book table row content
+    bookRow.innerHTML = `<td>${book.book}</td>
+    <td>${book.author}</td>
+    <td>${book.pages}</td>
+    <td><button class="button is-small ${book.read ? "is-dark" : ""}">${
+      book.read ? "read" : "not read"
+    }</button></td>
+    <td><button class="delete"></button></td>`;
+
+    booksContainer.appendChild(bookRow);
+  });
+}
+
+function Book() {
+  // constructor function
+}
+
+function addNewBook() {}

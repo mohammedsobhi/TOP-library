@@ -68,30 +68,30 @@
         <form>
           <div class="columns">
             <div class="column field mb-0">
-              <label class="label">Book</label>
+              <label class="label" for="book">Book</label>
               <div class="control">
-                <input class="input" type="text" placeholder="Text input">
+                <input class="input" id="book" name="book" type="text" placeholder="Text input">
               </div>
             </div>
             <div class="column field mb-0">
-              <label class="label">Author</label>
+              <label class="label" for="author">Author</label>
               <div class="control">
-                <input class="input" type="text" placeholder="Text input">
+                <input class="input" id="author" name="author" type="text" placeholder="Text input">
               </div>
             </div>
             <div class="column is-2 field mb-0">
-              <label class="label">Pages</label>
+              <label class="label" for="pages">Pages</label>
               <div class="control">
-                <input class="input" type="number" placeholder="Text input" step="1">
+                <input class="input" id="pages" name="pages" type="number" placeholder="Text input" step="1">
               </div>
             </div>
             <div class="column is-2 field mb-0">
-              <label class="label">Statue</label>
+              <label class="label" for="statue">Statue</label>
               <div class="control">
                 <div class="select">
-                  <select>
-                    <option>read</option>
-                    <option>not read</option>
+                  <select id="statue" name="statue">
+                    <option value="read">read</option>
+                    <option value="not read">not read</option>
                   </select>
                 </div>
               </div>
@@ -124,34 +124,7 @@
             </tr>
           </thead>
           <tbody id="books_container">
-            <!-- <tr>
-              <td>new dsasd dsa</td>
-              <td>newd ssdsdd</td>
-              <td>212</td>
-              <td><button class="button is-small is-dark">read</button></td>
-              <td><button class="delete"></button></td>
-            </tr>
-            <tr>
-              <td>new dsasd dsa</td>
-              <td>newd ssdsdd</td>
-              <td>212</td>
-              <td><button class="button is-small">not read</button></td>
-              <td><button class="delete"></button></td>
-            </tr>
-            <tr>
-              <td>new dsasd dsa</td>
-              <td>newd ssdsdd</td>
-              <td>212</td>
-              <td><button class="button is-small is-dark">read</button></td>
-              <td><button class="delete"></button></td>
-            </tr>
-            <tr>
-              <td>new dsasd dsa</td>
-              <td>newd ssdsdd</td>
-              <td>212</td>
-              <td><button class="button is-small is-dark">read</button></td>
-              <td><button class="delete"></button></td>
-            </tr> -->
+            
           </tbody>
         </table>
       </div>
